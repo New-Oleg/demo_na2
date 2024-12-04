@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+</head>
+<body>
+
+    <a href="/add">add</a>
+    <a href="'/red'${id}">udate</a>
+    <a href="'/profile'${authorId}">profile</a>
+    <a href="/stata">stata</a>
+
+    <label for="id">Find by id:</label><br>
+    <input type="text" id="id" name="id"><br>
+
+<div th:each="order : ${orders}">
+    <p th:text="${order.id}"></p>
+    <p th:text="${order.status}"></p>
+</div>
+
+    
+</body>
+</html>

@@ -1,0 +1,28 @@
+
+<head>
+<title>Форма ввода данных</title>
+</head>
+<body>
+
+<h1>Введите данные</h1>
+<form  method="post">
+  <label for="problem">Problem:</label><br>
+  <textarea id="problem" name="problem" rows="4" cols="50"></textarea><br>
+
+  <label for="model">Model:</label><br>
+  <input type="text" id="model" name="model"><br>
+
+  <label for="dis">Dis:</label><br>
+  <input type="text" id="dis" name="dis"><br>
+
+  <label for="status">Status:</label><br>
+  <select id="status" name="status">
+    <option value="готово_к_выдаче">Готова к выдаче</option>
+    <option value="в_процессе_ремонта">В процессе ремонта</option>
+    <option value="ожидание_запчастей">Ожидание запчастей</option>
+  </select><br><br>
+ 
+  <input type="submit" value="Отправить">
+</form>
+
+</body>
